@@ -16,15 +16,17 @@ table {margin-bottom: 1cm; border-collapse: collapse; width: 100%; }
 table td, table th, fieldset {padding: 5px; border: solid #D7E1C7; }
 h2 { font-size: 1.2em; font-family: "Gill Sans", sans-serif; }
 td textarea { width: 100%; }
+ul {list-style-type: none;}
 
-#header { display: flex; align-items: center; }
+#header { display: flex; flex-wrap: wrap; align-items: center; }
 #logo {position: relative;  float: left; width: 2.85cm; height: 4cm; margin-right: 1cm; margin-bottom: 1cm;}
 h1 {font-family: Papyrus, serif;  font-size: 2em; }
+header p {margin-top: 0;}
 
 .labeled-field { vertical-align: top; }
 .emphasize-fillable { border-style: solid; border-width: 0 0 thin 0; }
 .info {text-align: center;}
-.underskrift {height: 2cm; vertical-align: top;}
+.underskrift {height: 1.5cm; vertical-align: top;}
 .fullwidth {width: 100%; display: block;}
 
 #meta {float: right; width: 300px;  margin-top: 1px; }
