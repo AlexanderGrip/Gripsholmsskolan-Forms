@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
-	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<meta charset="utf-8" />
 
-	<title>Skriftlig varning</title>
+	<title>Betygsvarning</title>
 
 	<link rel='stylesheet' type='text/css' href='css/style.css' />
 	<link rel='stylesheet' type='text/css' href='css/print.css' media="print" />
-	<script type='text/javascript' src='js/jquery-1.3.2.min.js'></script>
-	<script type='text/javascript' src='js/example.js'></script>
+	<link rel='stylesheet' type='text/css' href='css/warning.css' />
+	<script src=dist/forms.bundle.js></script>
 
 </head>
 
@@ -21,8 +21,10 @@
 			<div id="logo">
 				<img src="images/logo.svg" alt="logo" />
 			</div>
-			<h1>BETYGSVARNING</h1>
-
+			<header>
+				<h1>Betygsvarning</h1>
+				<p>- När en elev ej uppnår målen och riskerar att bli utan betyg i ett läroämne</p>
+			</header>
 		</div>
 
 		<div style="clear:both"></div>
@@ -45,23 +47,32 @@
 
 		</table>
 
+		<h2>Betygsvarningen gäller...</h2>
 		<table>
 
 			<tr>
 				<td>
-					<label>Betygsvarningen gäller</label>
-					<textarea rows=1></textarea>
+					<ul>
+						<li>
+							<label><input type="checkbox"> Terminsbetyg</label>
+						</li>
+						<li>
+							<label><input type="checkbox"> Slutbetyg</label>
+						</li>
+					</ul>
 				</td>
 				<td>
-					<label><input type="checkbox">Terminsbetyg</label>
-					<label><input type="checkbox">Slutbetyg</label>
+					<label>Läroämne</label>
 					<textarea rows=1></textarea>
 				</td>
 			</tr>
 
+		</table>
+		<table>
+
 			<tr>
 
-				<td colspan=2>
+				<td>
 					<label>Motivering</label>
 					<textarea rows=3></textarea>
 				</td>
@@ -70,38 +81,59 @@
 
 			<tr>
 
-				<td colspan=2>
+				<td>
 					<label>För att bli godkänd krävs</label>
 					<textarea rows=3></textarea>
 				</td>
 
 			</tr>
 
+		</table>
+		<h2>Undervisande lärare</h2>
+		<table>
+
 			<tr>
 
-				<td colspan=2>
-					<label>Undervisande lärare (namnunderskrift och namnförtydligande</label>
-					<p> Mariefred den _____ / ____ 20____</p>
+				<td>
+					<label>Datum</label>
+					<textarea rows=1></textarea>
+				</td>
+				<td>
+					<label>Namnförtydligande</label>
+					<textarea rows=1></textarea>
 				</td>
 
 			</tr>
-
 			<tr>
-
-				<td colspan=2>
-					<p> Mariefred den _____ / ____ 20____</p>
+				<td colspan=2 class=underskrift>
+					<label>Signatur</label>
 				</td>
-
 			</tr>
 
 		</table>
 
 		<h2>Vårdnadshavare</h2>
-		<fieldset>
-			<legend>Signatur</legend>
-			<label>Jag/Vi som vårdnadshavare har tagit del av betygsvarningen och bekräftar härmed med namnunderskrift och namnförtydligande.</label>
-			<div class=underskrift></div>
-		</fieldset>
+		<table>
+
+			<tr>
+
+				<td>
+					<label>Datum</label>
+					<textarea rows=1></textarea>
+				</td>
+				<td>
+					<label>Namnförtydligande</label>
+					<textarea rows=1></textarea>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan=2 class=underskrift>
+					<label>Signatur</label>
+				</td>
+			</tr>
+
+		</table>
 
 	</div>
 

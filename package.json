@@ -1,0 +1,25 @@
+{
+  "name": "gripsholmsskolan-forms",
+  "version": "0.1.0",
+  "description": "Formulär för skolans administration.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "webpack": "2.2.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solidfox/Gripsholmsskolan-Forms.git"
+  },
+  "author": "Daniel Schlaug & Alexander Öhlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solidfox/Gripsholmsskolan-Forms/issues"
+  },
+  "homepage": "https://github.com/solidfox/Gripsholmsskolan-Forms"
+}
