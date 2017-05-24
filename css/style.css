@@ -28,6 +28,8 @@ header p {margin-top: 0;}
 .info {text-align: center;}
 .underskrift {height: 1.5cm; vertical-align: top;}
 .fullwidth {width: 100%; display: block;}
+.hlist { display: inline; }
+.two-columns { columns: 2; }
 
 #meta {float: right; width: 300px;  margin-top: 1px; }
 #meta td { text-align: right; }
